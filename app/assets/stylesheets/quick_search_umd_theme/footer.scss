@@ -2,15 +2,14 @@
   max-width: 1400px;
 }
 
-$text-color: #fff;
 
 // footer CSS
 
 .footer {
-  background-color: #008cba;
+  background-color: $footer-bg-color;
   padding: 2rem 4rem;
   text-align: center;
-  color: $text-color;
+  color: $footer-text-color;
   i {
     font-size: 100px;
   }
@@ -18,7 +17,7 @@ $text-color: #fff;
 
 .footer {
   h4 {
-    color: $text-color;
+    color: $footer-text-color;
     font-size: 1em;
     font-weight: 400;
     text-transform: uppercase;
@@ -28,14 +27,14 @@ $text-color: #fff;
   p, a {
     font-weight: 300;
     font-size: .8em;
-    color: $text-color;
+    color: $footer-text-color;
   }
 }
 
 @media only screen and (min-width: 40.063em) {
 .footer {
   .columns:nth-child(n+2) {
-    border-left: 1px solid scale-color($text-color, $lightness: -30%);
+    border-left: 1px solid scale-color($footer-text-color, $lightness: -30%);
     min-height: 280px;
   }
  }

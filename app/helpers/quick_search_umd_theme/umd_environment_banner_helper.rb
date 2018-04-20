@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'socket'
 
 module QuickSearchUmdTheme
@@ -7,7 +9,7 @@ module QuickSearchUmdTheme
     ENVIRONMENT_NAME = if ENV['ENVIRONMENT_BANNER']
                          ENV['ENVIRONMENT_BANNER'].humanize.freeze
                        elsif Rails.env.development?
-                         'Local'.freeze
+                         'Local'
                        elsif Socket.gethostname =~ /(local|dev|stage)\./
                          $LAST_MATCH_INFO.captures
                                          .first
