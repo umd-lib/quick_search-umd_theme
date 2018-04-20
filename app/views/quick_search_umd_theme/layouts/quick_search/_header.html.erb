@@ -1,15 +1,84 @@
-<nav class="top-bar" data-topbar role="navigation">
-  <ul class="title-area">
-    <li class="name">
-      <h1><%= link_to t('default_title'), root_path %></h1>
-    </li>
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
+<!-- UMD Environment Banner -->
+<%= environment_banner %>
 
-  <section class="top-bar-section">
-    <!-- Right Nav Section -->
-    <ul class="right">
-      <li class="active"><%= link_to 'About', about_path, class: 'about' %></li>
+<!-- NAV bar -->
+<div class='nav-wrapper'>
+  <nav class="top-bar contain-to-grid row" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1><%= link_to t('organization_name'), root_path %></h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
     </ul>
-  </section>
-</nav>
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="active">
+          <a href="https://giving.umd.edu/giving/showSchool.php?name=libraries"
+            target="_blank">
+            <svg class="umdheader-nav__icon" xmlns="http://www.w3.org/2000/svg" 
+              width="24" height="28" viewBox="0 0 35 28">
+              <title>Gift</title>
+              <path d="M16 1.4C7.937 1.4 1.4 7.937 1.4 16S7.937 30.6 16 30.6c8.063 0 14.6-6.537 14.6-14.6S24.063 1.4 16 1.4zm3.38 22.66v-2.55h2L21 13l-4.68 8.36h-.38L11.11 13l-.27 8.55h2v2.55H6.08v-2.55H8l.45-11.5H6.42V7.5h4.54l5.16 9.19 5-9.27h4.51v2.55h-2.04l.61 11.49h2v2.55z">
+              </path>
+            </svg>
+            Make A Gift
+          </a> 
+      </ul>
+    </section>
+  </nav>
+</div>
+
+<!-- Subnav -->
+<div class='subnav-wrapper row'>
+  <nav class="top-bar subtop-bar contain-to-grid row"  role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <a id='subnav-home-link' href='/'><img src="<%= asset_path "quicksearch_umd_theme/liblogo.png" %>" alt='University of Maryland Libraries' /></a>  
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+    </ul>
+    <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    	<ul class="right">
+		  <li class="has-dropdown not-click"><a href="#">LIBRARIES &amp; SPACES </a>
+		   <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link show-for-small"><a class="parent-link js-generated" href="#">LIBRARIES &amp; SPACES </a></li>
+			   <li><a href="/mckeldin" onclick="ga('send', 'event', 'navigation', 'main-menu', 'mck');">McKeldin Library (Main Library) </a></li>
+			   <li><a href="/architecture" onclick="ga('send', 'event', 'navigation', 'main-menu', 'arch');">Architecture Library </a></li>
+			   <li><a href="/art" onclick="ga('send', 'event', 'navigation', 'main-menu', 'art');">Art Library </a></li>
+			   <li><a href="/hornbake" onclick="ga('send', 'event', 'navigation', 'main-menu', 'hornbake');">Hornbake Library</a></li>
+			   <li><a href="/mspal" onclick="ga('send', 'event', 'navigation', 'main-menu', 'mspal');">Michelle Smith Performing Arts Library </a></li>
+			   <li><a href="http://shadygrove.umd.edu/library" onclick="ga('send', 'event', 'navigation', 'main-menu', 'priddy');" target="_blank">Priddy Library (Universities at Shady Grove) </a></li>
+			   <li><a href="/severn" onclick="ga('send', 'event', 'navigation', 'main-menu', 'severn');">Severn Library</a></li>
+			   <li><a href="/stem" onclick="ga('send', 'event', 'navigation', 'main-menu', 'stem');">STEM Library </a></li>
+			</ul>
+		  </li>
+		  <li class="has-dropdown not-click"><a href="#">FIND &amp; CITE </a>
+		   	<ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link show-for-small"><a class="parent-link js-generated" href="#">FIND &amp; CITE </a></li>
+		   		<li><a href="#">list</a></li>
+		   	</ul>
+		  </li>
+		  <li class="has-dropdown not-click"><a href="#">SERVICES</a>
+		  	<ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link show-for-small"><a class="parent-link js-generated" href="#">SERVICES</a></li>
+		   		<li><a href="#">list</a></li>
+		   	</ul>
+		  </li>
+		  <li class="has-dropdown not-click"><a href="#">I AM A...</a>
+		  	<ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link show-for-small"><a class="parent-link js-generated" href="#">I AM A...</a></li>
+		   		<li><a href="#">list</a></li>
+		   	</ul>
+		  </li>
+		  <li class="has-dropdown not-click"><a href="#">HELP</a>
+		    <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link show-for-small"><a class="parent-link js-generated" href="#">HELP</a></li>
+		   		<li><a href="#">list</a></li>
+		   	</ul>
+		  </li>
+		  <li class="has-dropdown not-click"><a href="#">ABOUT</a>
+		  	<ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link show-for-small"><a class="parent-link js-generated" href="#">ABOUT</a></li>
+		   		<li><a href="#">list</a></li>
+		   	</ul>
+		  </li>
+		</ul>    
+    </section> 
+  </nav>
+</div>

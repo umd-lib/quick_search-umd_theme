@@ -1,4 +1,5 @@
-Rails.application.routes.draw do
+# frozen_string_literal: true
 
-  mount QuickSearchUmdTheme::Engine => "/quick_search_umd_theme"
+Rails.application.routes.draw do
+  mount QuickSearchUmdTheme::Engine => '/quick_search_umd_theme'
 end
