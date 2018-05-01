@@ -5,7 +5,7 @@ require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 
 Bundler.require(*Rails.groups)
-require 'quick_search_umd_theme'
+require 'quick_search-umd_theme'
 
 module Dummy
   class Application < Rails::Application
