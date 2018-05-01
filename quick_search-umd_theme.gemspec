@@ -28,4 +28,5 @@ Gem::Specification.new do |s|
   s.add_dependency 'sass-rails', '~> 5.0'
 
   s.add_development_dependency('rubocop', '0.52.1')
+  s.add_development_dependency('sqlite3')
 end
