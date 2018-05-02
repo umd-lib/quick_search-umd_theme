@@ -79,9 +79,11 @@
         > a { 
           background: #fff !important;
           color: rgb(51, 51, 51); 
+          font-weight: 400; 
         }
         background: #fff !important;
         color: rgb(51, 51, 51); 
+         
         &:hover, &:active, &:focus { 
           background: #333 !important;
           color: #fff !important;           
@@ -109,6 +111,7 @@
     background: #fff; 
   }
   .title-area {
+    z-index: 999; 
     .toggle-topbar.menu-icon {
       margin-top: -20px;
     } 
@@ -120,7 +123,7 @@
         padding: 10px 0; 
         a { 
           display: block;
-          font-weight: 700;
+          font-weight: 400;
            
         }
       } 
