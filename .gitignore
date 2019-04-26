@@ -8,3 +8,6 @@ test/dummy/tmp/
 test/dummy/.sass-cache
 
 .byebug_history
+
+# This is a plugin, so don't check in Gemfile.lock
+Gemfile.lock
