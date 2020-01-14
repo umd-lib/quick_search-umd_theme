@@ -1,6 +1,5 @@
-# Enables Rails cops
-Rails:
-  Enabled: true
+require:
+  - rubocop-rails
 
 # Don't require gems in Gemfile to be in alphabetical order.
 Bundler/OrderedGems:
@@ -11,6 +10,7 @@ AllCops:
   Include:
     - '**/Gemfile'
     - '**/Rakefile'
+    - 'app/**/*.rb'
   Exclude:
     - 'bin/*'
     - 'test/**/*'
@@ -21,15 +21,15 @@ AllCops:
     - 'lib/**/*'
     - 'db/seeds.rb'
 
-  TargetRubyVersion: 2.3
-  TargetRailsVersion: 5.0
+  TargetRubyVersion: 2.6
+  TargetRailsVersion: 5.2
 
 
 Naming/FileName:
   Exclude:
     - '**/*'
 # Increase max allowed line length
-Metrics/LineLength:
+Layout/LineLength:
   Max: 120
 
 Metrics/ClassLength:
@@ -60,4 +60,4 @@ Style/ClassAndModuleChildren:
     - 'test/test_helper.rb'
 
 Layout/IndentationConsistency:
-  EnforcedStyle: rails
+  EnforcedStyle: indented_internal_methods

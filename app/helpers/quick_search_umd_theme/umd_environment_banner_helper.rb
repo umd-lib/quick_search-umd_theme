@@ -11,6 +11,7 @@ module QuickSearchUmdTheme
     def environment_banner
       QuickSearchUmdTheme.configure
       return unless QuickSearchUmdTheme.configuration.environment_banner.enabled?
+
       banner_text = QuickSearchUmdTheme.configuration.environment_banner.text
       css_options = QuickSearchUmdTheme.configuration.environment_banner.css_options
       content_tag(:div, banner_text, css_options)
