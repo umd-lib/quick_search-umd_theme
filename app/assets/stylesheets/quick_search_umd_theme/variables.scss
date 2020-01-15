@@ -1,0 +1,30 @@
+$umd-red: #e21833;
+$umd-darker-red: #951022;
+
+
+$body-font-family: Source Sans,Source Sans Pro,sans-serif !important;
+
+$primary-color: $umd-darker-red;
+$button-bg-color: $primary-color;
+$button-bg-hover: $umd-red;
+$link-color: rgb(3, 94, 140);
+$anchor-font-color: $link-color;
+
+// Top Navbar
+$topbar-height: 45px;
+$topbar-bg-color: $umd-red;
+$topbar-bg: $umd-red;
+$topbar-link-bg-active: $umd-red;
+$topbar-link-bg-active-hover: $umd-darker-red;
+$topbar-button-font-size: 13px;
+$topbar-title-font-size: 14px;
+$topbar-link-font-size: 15px;
+// Subnav
+$topbar-dropdown-link-bg: #333;
+$topbar-dropdown-link-bg-hover: lighten($topbar-dropdown-link-bg, 10%);
+$topbar-dropdown-link-color-hover: $umd-red;
+
+$sub-nav-active-bg: #fff;
+
+$footer-text-color: #fff;
+$footer-bg-color: #333;

@@ -1,0 +1,46 @@
+.row {  
+  max-width: 73rem
+}
+
+#content {
+  background-color: white;
+}
+
+#main-content {
+  background-color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.date {
+  padding-left: 10px; 
+
+  a.info { padding: 1px 7px; }
+  
+  a { 
+    color: #333;
+    background-color: #fff;
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border: 1px solid transparent;
+    margin-bottom: 0;
+    margin-left: 2px; 
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+
+    &:focus, &:hover {
+      outline: auto 2px Highlight !important;
+      background-color: #e6e6e6;
+    }
+  }
+}
+
+
+/* styles for '...' */
+.block-with-text p {
+  @include multiLineEllipsis($lineHeight: 1.2em, $lineCount: 3, $bgColor: white);  
+}
